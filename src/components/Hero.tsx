@@ -10,8 +10,16 @@ import vaitoLogo from "@/assets/vaito-logo.jpg";
 const Hero = () => {
   const [showPresale, setShowPresale] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [solAmount, setSolAmount] = useState("");
   const { toast } = useToast();
   const presaleAddress = "96Qj354e1ZnXe37gvx5zvK5Rb7MRtKcyJvNqfXUwyjt3";
+  const exchangeRate = 122781872; // 1 SOL = 122,781,872 VAITO
+
+  const calculateVaito = () => {
+    const sol = parseFloat(solAmount);
+    if (isNaN(sol) || sol <= 0) return "0";
+    return (sol * exchangeRate).toLocaleString('en-US', { maximumFractionDigits: 0 });
+  };
 
   const copyAddress = () => {
     navigator.clipboard.writeText(presaleAddress);
@@ -133,11 +141,39 @@ const Hero = () => {
               </div>
             </div>
 
+            {/* Calculator */}
+            <div className="space-y-3 p-4 rounded-lg bg-primary/10 border border-primary/30">
+              <label className="text-sm font-semibold text-foreground">Presale Calculator</label>
+              <div className="space-y-3">
+                <div>
+                  <label className="text-xs text-muted-foreground mb-1 block">Enter SOL Amount</label>
+                  <input
+                    type="number"
+                    placeholder="0.00"
+                    value={solAmount}
+                    onChange={(e) => setSolAmount(e.target.value)}
+                    min="0"
+                    step="0.01"
+                    className="w-full px-3 py-2 bg-background/50 border border-primary/30 rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  />
+                </div>
+                <div className="flex items-center justify-center text-muted-foreground">
+                  <span className="text-xl">↓</span>
+                </div>
+                <div>
+                  <label className="text-xs text-muted-foreground mb-1 block">You Will Receive</label>
+                  <div className="w-full px-3 py-2 bg-background/80 border border-primary/50 rounded-md text-foreground font-bold text-lg">
+                    {calculateVaito()} VAITO
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Exchange Rate */}
-            <div className="p-4 rounded-lg bg-primary/10 border border-primary/30">
+            <div className="p-3 rounded-lg bg-background/50 border border-primary/20">
               <div className="text-center">
-                <p className="text-sm text-muted-foreground mb-1">Exchange Rate</p>
-                <p className="text-xl font-bold text-foreground">1 SOL = 12,278,1872 VAITO</p>
+                <p className="text-xs text-muted-foreground mb-1">Exchange Rate</p>
+                <p className="text-sm font-semibold text-foreground">1 SOL = 122,781,872 VAITO</p>
               </div>
             </div>
 
