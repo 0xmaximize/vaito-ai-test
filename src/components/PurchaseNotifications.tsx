@@ -20,7 +20,7 @@ const PurchaseNotifications = () => {
   };
 
   const calculateVaito = (sol: number) => {
-    const exchangeRate = 122781872;
+    const exchangeRate = 12682023;
     return (sol * exchangeRate).toLocaleString('en-US', { maximumFractionDigits: 0 });
   };
 

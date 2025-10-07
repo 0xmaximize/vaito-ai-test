@@ -13,7 +13,7 @@ export const Hero = () => {
   const [solAmount, setSolAmount] = useState("");
   const { toast } = useToast();
   const presaleAddress = "96Qj354e1ZnXe37gvx5zvK5Rb7MRtKcyJvNqfXUwyjt3";
-  const exchangeRate = 122781872; // 1 SOL = 122,781,872 VAITO
+  const exchangeRate = 12682023; // 1 SOL = 12,682,023 VAITO
 
   const openPresale = () => setShowPresale(true);
 
@@ -176,7 +176,7 @@ export const Hero = () => {
             <div className="p-3 rounded-lg bg-background/50 border border-primary/20">
               <div className="text-center">
                 <p className="text-xs text-muted-foreground mb-1">Exchange Rate</p>
-                <p className="text-sm font-semibold text-foreground">1 SOL = 122,781,872 VAITO</p>
+                <p className="text-sm font-semibold text-foreground">1 SOL = 12,682,023 VAITO</p>
               </div>
             </div>
 
