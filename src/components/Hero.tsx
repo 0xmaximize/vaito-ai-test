@@ -7,13 +7,15 @@ import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-vaito.jpg";
 import vaitoLogo from "@/assets/vaito-logo.jpg";
 
-const Hero = () => {
+export const Hero = () => {
   const [showPresale, setShowPresale] = useState(false);
   const [copied, setCopied] = useState(false);
   const [solAmount, setSolAmount] = useState("");
   const { toast } = useToast();
   const presaleAddress = "96Qj354e1ZnXe37gvx5zvK5Rb7MRtKcyJvNqfXUwyjt3";
   const exchangeRate = 122781872; // 1 SOL = 122,781,872 VAITO
+
+  const openPresale = () => setShowPresale(true);
 
   const calculateVaito = () => {
     const sol = parseFloat(solAmount);
@@ -69,6 +71,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               onClick={() => setShowPresale(true)}
+              data-presale-trigger
               className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 py-6 text-lg neon-border transition-all hover:shadow-[0_0_30px_hsl(var(--neon-glow)/0.7)]"
             >
               BUY NOW
