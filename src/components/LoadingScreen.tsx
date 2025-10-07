@@ -36,19 +36,19 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
       <div className="relative z-10 flex flex-col items-center gap-8">
         {/* Logo */}
         <div className="neon-border rounded-2xl p-2 animate-scale-in">
-          <div className="w-24 h-24 rounded-xl overflow-hidden">
+          <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl overflow-hidden">
             <img src={vaitoLogo} alt="VAITO.AI Logo" className="w-full h-full object-cover" />
           </div>
         </div>
 
         {/* Text */}
-        <div className="flex flex-col items-center gap-4">
-          <h1 className="font-orbitron font-black text-6xl md:text-7xl text-glow tracking-wider animate-fade-in">
+        <div className="flex flex-col items-center gap-4 px-4">
+          <h1 className="font-orbitron font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-glow tracking-wider animate-fade-in text-center">
             VAITO.AI
           </h1>
           
           {/* Loading bar */}
-          <div className="w-64 h-1 bg-background/50 rounded-full overflow-hidden">
+          <div className="w-48 sm:w-56 md:w-64 h-1 bg-background/50 rounded-full overflow-hidden">
             <div 
               className="h-full bg-gradient-to-r from-primary via-secondary to-primary rounded-full transition-all duration-300 ease-out"
               style={{ width: `${progress}%` }}
@@ -56,7 +56,7 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
           </div>
 
           {/* Loading text */}
-          <p className="text-muted-foreground text-sm font-medium animate-pulse">
+          <p className="text-muted-foreground text-xs md:text-sm font-medium animate-pulse">
             Loading... {Math.round(progress)}%
           </p>
         </div>
@@ -70,10 +70,10 @@ const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
       </div>
 
       {/* Corner decorations */}
-      <div className="absolute top-10 left-10 w-20 h-20 border-l-2 border-t-2 border-primary/30" />
-      <div className="absolute top-10 right-10 w-20 h-20 border-r-2 border-t-2 border-primary/30" />
-      <div className="absolute bottom-10 left-10 w-20 h-20 border-l-2 border-b-2 border-primary/30" />
-      <div className="absolute bottom-10 right-10 w-20 h-20 border-r-2 border-b-2 border-primary/30" />
+      <div className="absolute top-4 left-4 md:top-10 md:left-10 w-12 h-12 md:w-20 md:h-20 border-l-2 border-t-2 border-primary/30" />
+      <div className="absolute top-4 right-4 md:top-10 md:right-10 w-12 h-12 md:w-20 md:h-20 border-r-2 border-t-2 border-primary/30" />
+      <div className="absolute bottom-4 left-4 md:bottom-10 md:left-10 w-12 h-12 md:w-20 md:h-20 border-l-2 border-b-2 border-primary/30" />
+      <div className="absolute bottom-4 right-4 md:bottom-10 md:right-10 w-12 h-12 md:w-20 md:h-20 border-r-2 border-b-2 border-primary/30" />
     </div>
   );
 };

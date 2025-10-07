@@ -53,33 +53,33 @@ export const Hero = () => {
             </div>
           </div>
 
-          <h1 className="font-orbitron font-black text-5xl md:text-7xl text-glow tracking-wider">
+          <h1 className="font-orbitron font-black text-4xl sm:text-5xl md:text-7xl text-glow tracking-wider">
             VAITO.AI
           </h1>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
             JOIN OUR
             <br />
             <span className="text-foreground">COMMUNITY</span>
           </h2>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-lg leading-relaxed">
             Be part of the crypto movement, stay informed and connected with everything.
           </p>
 
-          <div className="flex gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
             <Button 
               size="lg" 
               onClick={() => setShowPresale(true)}
               data-presale-trigger
-              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-8 py-6 text-lg neon-border transition-all hover:shadow-[0_0_30px_hsl(var(--neon-glow)/0.7)]"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 md:px-8 py-5 md:py-6 text-base md:text-lg neon-border transition-all hover:shadow-[0_0_30px_hsl(var(--neon-glow)/0.7)] w-full sm:w-auto"
             >
               BUY NOW
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary/10 font-semibold px-8 py-6 text-lg backdrop-blur-sm"
+              className="border-primary text-primary hover:bg-primary/10 font-semibold px-6 md:px-8 py-5 md:py-6 text-base md:text-lg backdrop-blur-sm w-full sm:w-auto"
             >
               LEARN MORE
             </Button>
