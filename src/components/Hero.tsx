@@ -184,12 +184,12 @@ export const Hero = () => {
             <div className="space-y-3">
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Raised</span>
-                <span className="font-semibold text-foreground">23 SOL / 120 SOL</span>
+                <span className="font-semibold text-foreground">52 SOL / 120 SOL</span>
               </div>
-              <Progress value={19} className="h-3" />
+              <Progress value={43} className="h-3" />
               <div className="flex justify-between text-xs text-muted-foreground">
-                <span>19% Complete</span>
-                <span>97 SOL Remaining</span>
+                <span>43% Complete</span>
+                <span>68 SOL Remaining</span>
               </div>
             </div>
 
