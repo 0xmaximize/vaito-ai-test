@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
-type Language = "en" | "id";
+type Language = "en" | "id" | "zh" | "ko" | "ru" | "ar";
 
 interface LanguageContextType {
   language: Language;
@@ -174,6 +174,338 @@ const translations = {
     "footer.whitepaper": "Whitepaper",
     "footer.audit": "Audit",
     "footer.docs": "Dokumentasi"
+  },
+  zh: {
+    // Header
+    "nav.about": "关于",
+    "nav.tokenomics": "代币经济",
+    "nav.roadmap": "路线图",
+    
+    // Hero
+    "hero.subtitle": "加入我们的",
+    "hero.community": "社区",
+    "hero.description": "成为加密运动的一部分，随时了解并与一切保持联系。",
+    "hero.buyNow": "立即购买",
+    "hero.learnMore": "了解更多",
+    
+    // Presale Dialog
+    "presale.title": "VAITO.AI 预售",
+    "presale.description": "发送 SOL 参与预售",
+    "presale.address": "预售地址",
+    "presale.calculator": "预售计算器",
+    "presale.enterAmount": "输入 SOL 数量",
+    "presale.willReceive": "您将收到",
+    "presale.exchangeRate": "汇率",
+    "presale.minBuy": "最小购买",
+    "presale.raised": "已筹集",
+    "presale.complete": "完成",
+    "presale.remaining": "剩余",
+    "presale.warning": "⚠️ 发送资金前请务必验证合约地址。请勿从交易所发送。",
+    
+    // About
+    "about.title": "关于 VAITO.AI",
+    "about.description1": "VAITO.AI 是一个革命性的加密货币项目，将尖端人工智能与区块链技术相结合。",
+    "about.description2": "我们的使命是创建一个去中心化的生态系统，人工智能驱动的解决方案与区块链的透明度和安全性相结合。",
+    "about.card1.title": "人工智能驱动",
+    "about.card1.description": "先进的人工智能算法驱动创新",
+    "about.card2.title": "区块链安全",
+    "about.card2.description": "基于 Solana 构建，实现快速安全的交易",
+    "about.card3.title": "社区驱动",
+    "about.card3.description": "由全球加密货币爱好者社区提供支持",
+    
+    // Tokenomics
+    "tokenomics.title": "代币经济",
+    "tokenomics.total": "总供应量",
+    "tokenomics.liquidity": "流动性池",
+    "tokenomics.presale": "预售",
+    "tokenomics.marketing": "营销",
+    "tokenomics.team": "团队",
+    "tokenomics.rewards": "社区奖励",
+    "tokenomics.info.title": "代币分配",
+    "tokenomics.info.point1": "公平启动，无团队分配",
+    "tokenomics.info.point2": "流动性锁定 1 年",
+    "tokenomics.info.point3": "反鲸机制到位",
+    "tokenomics.info.point4": "持有者自动 LP 奖励",
+    
+    // Roadmap
+    "roadmap.title": "路线图",
+    "roadmap.phase1.title": "第一阶段：启动",
+    "roadmap.phase1.item1": "网站启动",
+    "roadmap.phase1.item2": "社区建设",
+    "roadmap.phase1.item3": "预售活动",
+    "roadmap.phase1.item4": "社交媒体存在",
+    "roadmap.phase2.title": "第二阶段：增长",
+    "roadmap.phase2.item1": "DEX 上市",
+    "roadmap.phase2.item2": "营销活动",
+    "roadmap.phase2.item3": "合作伙伴公告",
+    "roadmap.phase2.item4": "审计完成",
+    "roadmap.phase3.title": "第三阶段：扩展",
+    "roadmap.phase3.item1": "CEX 上市",
+    "roadmap.phase3.item2": "AI 平台测试版",
+    "roadmap.phase3.item3": "全球营销",
+    "roadmap.phase3.item4": "社区治理",
+    "roadmap.phase4.title": "第四阶段：创新",
+    "roadmap.phase4.item1": "AI 产品发布",
+    "roadmap.phase4.item2": "跨链桥",
+    "roadmap.phase4.item3": "移动应用发布",
+    "roadmap.phase4.item4": "生态系统扩展",
+    
+    // Footer
+    "footer.rights": "版权所有。",
+    "footer.community": "社区",
+    "footer.resources": "资源",
+    "footer.whitepaper": "白皮书",
+    "footer.audit": "审计",
+    "footer.docs": "文档"
+  },
+  ko: {
+    // Header
+    "nav.about": "소개",
+    "nav.tokenomics": "토크노믹스",
+    "nav.roadmap": "로드맵",
+    
+    // Hero
+    "hero.subtitle": "우리의",
+    "hero.community": "커뮤니티에 참여하세요",
+    "hero.description": "암호화폐 운동의 일원이 되어 모든 것에 대한 정보를 받고 연결을 유지하세요.",
+    "hero.buyNow": "지금 구매",
+    "hero.learnMore": "더 알아보기",
+    
+    // Presale Dialog
+    "presale.title": "VAITO.AI 프리세일",
+    "presale.description": "프리세일에 참여하려면 SOL을 보내세요",
+    "presale.address": "프리세일 주소",
+    "presale.calculator": "프리세일 계산기",
+    "presale.enterAmount": "SOL 금액 입력",
+    "presale.willReceive": "받으실 금액",
+    "presale.exchangeRate": "환율",
+    "presale.minBuy": "최소 구매",
+    "presale.raised": "모금액",
+    "presale.complete": "완료",
+    "presale.remaining": "남은",
+    "presale.warning": "⚠️ 자금을 보내기 전에 항상 컨트랙트 주소를 확인하세요. 거래소에서 보내지 마세요.",
+    
+    // About
+    "about.title": "VAITO.AI 소개",
+    "about.description1": "VAITO.AI는 최첨단 인공지능과 블록체인 기술을 결합한 혁신적인 암호화폐 프로젝트입니다.",
+    "about.description2": "우리의 임무는 AI 기반 솔루션이 블록체인의 투명성과 보안을 만나는 탈중앙화 생태계를 만드는 것입니다.",
+    "about.card1.title": "AI 기반",
+    "about.card1.description": "혁신을 주도하는 고급 인공지능 알고리즘",
+    "about.card2.title": "블록체인 보안",
+    "about.card2.description": "빠르고 안전한 거래를 위해 Solana에 구축됨",
+    "about.card3.title": "커뮤니티 주도",
+    "about.card3.description": "전 세계 암호화폐 애호가 커뮤니티가 지원",
+    
+    // Tokenomics
+    "tokenomics.title": "토크노믹스",
+    "tokenomics.total": "총 공급량",
+    "tokenomics.liquidity": "유동성 풀",
+    "tokenomics.presale": "프리세일",
+    "tokenomics.marketing": "마케팅",
+    "tokenomics.team": "팀",
+    "tokenomics.rewards": "커뮤니티 보상",
+    "tokenomics.info.title": "토큰 분배",
+    "tokenomics.info.point1": "팀 할당 없이 공정한 출시",
+    "tokenomics.info.point2": "1년간 유동성 잠금",
+    "tokenomics.info.point3": "고래 방지 메커니즘 적용",
+    "tokenomics.info.point4": "홀더를 위한 자동 LP 보상",
+    
+    // Roadmap
+    "roadmap.title": "로드맵",
+    "roadmap.phase1.title": "1단계: 출시",
+    "roadmap.phase1.item1": "웹사이트 출시",
+    "roadmap.phase1.item2": "커뮤니티 구축",
+    "roadmap.phase1.item3": "프리세일 캠페인",
+    "roadmap.phase1.item4": "소셜 미디어 활동",
+    "roadmap.phase2.title": "2단계: 성장",
+    "roadmap.phase2.item1": "DEX 상장",
+    "roadmap.phase2.item2": "마케팅 캠페인",
+    "roadmap.phase2.item3": "파트너십 발표",
+    "roadmap.phase2.item4": "감사 완료",
+    "roadmap.phase3.title": "3단계: 확장",
+    "roadmap.phase3.item1": "CEX 상장",
+    "roadmap.phase3.item2": "AI 플랫폼 베타",
+    "roadmap.phase3.item3": "글로벌 마케팅",
+    "roadmap.phase3.item4": "커뮤니티 거버넌스",
+    "roadmap.phase4.title": "4단계: 혁신",
+    "roadmap.phase4.item1": "AI 제품 출시",
+    "roadmap.phase4.item2": "크로스체인 브릿지",
+    "roadmap.phase4.item3": "모바일 앱 출시",
+    "roadmap.phase4.item4": "생태계 확장",
+    
+    // Footer
+    "footer.rights": "모든 권리 보유.",
+    "footer.community": "커뮤니티",
+    "footer.resources": "리소스",
+    "footer.whitepaper": "백서",
+    "footer.audit": "감사",
+    "footer.docs": "문서"
+  },
+  ru: {
+    // Header
+    "nav.about": "О нас",
+    "nav.tokenomics": "Токеномика",
+    "nav.roadmap": "Дорожная карта",
+    
+    // Hero
+    "hero.subtitle": "ПРИСОЕДИНЯЙТЕСЬ К НАШЕМУ",
+    "hero.community": "СООБЩЕСТВУ",
+    "hero.description": "Станьте частью криптовалютного движения, будьте в курсе и на связи со всем.",
+    "hero.buyNow": "КУПИТЬ СЕЙЧАС",
+    "hero.learnMore": "УЗНАТЬ БОЛЬШЕ",
+    
+    // Presale Dialog
+    "presale.title": "Предпродажа VAITO.AI",
+    "presale.description": "Отправьте SOL для участия в предпродаже",
+    "presale.address": "Адрес предпродажи",
+    "presale.calculator": "Калькулятор предпродажи",
+    "presale.enterAmount": "Введите количество SOL",
+    "presale.willReceive": "Вы получите",
+    "presale.exchangeRate": "Обменный курс",
+    "presale.minBuy": "Мин. покупка",
+    "presale.raised": "Собрано",
+    "presale.complete": "Завершено",
+    "presale.remaining": "Осталось",
+    "presale.warning": "⚠️ Всегда проверяйте адрес контракта перед отправкой средств. Не отправляйте с бирж.",
+    
+    // About
+    "about.title": "О VAITO.AI",
+    "about.description1": "VAITO.AI - это революционный криптовалютный проект, который сочетает передовой искусственный интеллект с технологией блокчейн.",
+    "about.description2": "Наша миссия - создать децентрализованную экосистему, где решения на базе ИИ встречаются с прозрачностью и безопасностью блокчейна.",
+    "about.card1.title": "На базе ИИ",
+    "about.card1.description": "Передовые алгоритмы искусственного интеллекта, стимулирующие инновации",
+    "about.card2.title": "Безопасность блокчейна",
+    "about.card2.description": "Построен на Solana для быстрых и безопасных транзакций",
+    "about.card3.title": "Сообщество",
+    "about.card3.description": "Поддерживается глобальным сообществом криптоэнтузиастов",
+    
+    // Tokenomics
+    "tokenomics.title": "Токеномика",
+    "tokenomics.total": "Общее предложение",
+    "tokenomics.liquidity": "Пул ликвидности",
+    "tokenomics.presale": "Предпродажа",
+    "tokenomics.marketing": "Маркетинг",
+    "tokenomics.team": "Команда",
+    "tokenomics.rewards": "Награды сообщества",
+    "tokenomics.info.title": "Распределение токенов",
+    "tokenomics.info.point1": "Честный запуск без выделения команде",
+    "tokenomics.info.point2": "Ликвидность заблокирована на 1 год",
+    "tokenomics.info.point3": "Механизмы против китов",
+    "tokenomics.info.point4": "Автоматические награды LP для держателей",
+    
+    // Roadmap
+    "roadmap.title": "Дорожная карта",
+    "roadmap.phase1.title": "Фаза 1: Запуск",
+    "roadmap.phase1.item1": "Запуск сайта",
+    "roadmap.phase1.item2": "Создание сообщества",
+    "roadmap.phase1.item3": "Кампания предпродажи",
+    "roadmap.phase1.item4": "Присутствие в соцсетях",
+    "roadmap.phase2.title": "Фаза 2: Рост",
+    "roadmap.phase2.item1": "Листинг на DEX",
+    "roadmap.phase2.item2": "Маркетинговая кампания",
+    "roadmap.phase2.item3": "Объявления о партнерстве",
+    "roadmap.phase2.item4": "Завершение аудита",
+    "roadmap.phase3.title": "Фаза 3: Расширение",
+    "roadmap.phase3.item1": "Листинги на CEX",
+    "roadmap.phase3.item2": "Бета-версия ИИ платформы",
+    "roadmap.phase3.item3": "Глобальный маркетинг",
+    "roadmap.phase3.item4": "Управление сообществом",
+    "roadmap.phase4.title": "Фаза 4: Инновации",
+    "roadmap.phase4.item1": "Запуск продуктов ИИ",
+    "roadmap.phase4.item2": "Кросс-чейн мост",
+    "roadmap.phase4.item3": "Релиз мобильного приложения",
+    "roadmap.phase4.item4": "Расширение экосистемы",
+    
+    // Footer
+    "footer.rights": "Все права защищены.",
+    "footer.community": "Сообщество",
+    "footer.resources": "Ресурсы",
+    "footer.whitepaper": "Whitepaper",
+    "footer.audit": "Аудит",
+    "footer.docs": "Документация"
+  },
+  ar: {
+    // Header
+    "nav.about": "حول",
+    "nav.tokenomics": "اقتصاديات الرمز",
+    "nav.roadmap": "خارطة الطريق",
+    
+    // Hero
+    "hero.subtitle": "انضم إلى",
+    "hero.community": "مجتمعنا",
+    "hero.description": "كن جزءًا من حركة العملات المشفرة، وابق على اطلاع ومتصلاً بكل شيء.",
+    "hero.buyNow": "اشتر الآن",
+    "hero.learnMore": "اعرف المزيد",
+    
+    // Presale Dialog
+    "presale.title": "VAITO.AI البيع المسبق",
+    "presale.description": "أرسل SOL للمشاركة في البيع المسبق",
+    "presale.address": "عنوان البيع المسبق",
+    "presale.calculator": "حاسبة البيع المسبق",
+    "presale.enterAmount": "أدخل مبلغ SOL",
+    "presale.willReceive": "سوف تستلم",
+    "presale.exchangeRate": "سعر الصرف",
+    "presale.minBuy": "الحد الأدنى للشراء",
+    "presale.raised": "تم جمع",
+    "presale.complete": "مكتمل",
+    "presale.remaining": "المتبقي",
+    "presale.warning": "⚠️ تحقق دائمًا من عنوان العقد قبل إرسال الأموال. لا ترسل من البورصات.",
+    
+    // About
+    "about.title": "حول VAITO.AI",
+    "about.description1": "VAITO.AI هو مشروع عملة مشفرة ثوري يجمع بين الذكاء الاصطناعي المتطور وتقنية البلوكشين.",
+    "about.description2": "مهمتنا هي إنشاء نظام بيئي لامركزي حيث تلتقي الحلول المدعومة بالذكاء الاصطناعي مع شفافية وأمان البلوكشين.",
+    "about.card1.title": "مدعوم بالذكاء الاصطناعي",
+    "about.card1.description": "خوارزميات ذكاء اصطناعي متقدمة تدفع الابتكار",
+    "about.card2.title": "أمان البلوكشين",
+    "about.card2.description": "مبني على Solana للمعاملات السريعة والآمنة",
+    "about.card3.title": "مدفوع بالمجتمع",
+    "about.card3.description": "مدعوم من مجتمع عالمي من عشاق العملات المشفرة",
+    
+    // Tokenomics
+    "tokenomics.title": "اقتصاديات الرمز",
+    "tokenomics.total": "إجمالي العرض",
+    "tokenomics.liquidity": "مجمع السيولة",
+    "tokenomics.presale": "البيع المسبق",
+    "tokenomics.marketing": "التسويق",
+    "tokenomics.team": "الفريق",
+    "tokenomics.rewards": "مكافآت المجتمع",
+    "tokenomics.info.title": "توزيع الرموز",
+    "tokenomics.info.point1": "إطلاق عادل بدون تخصيص للفريق",
+    "tokenomics.info.point2": "السيولة مقفلة لمدة سنة واحدة",
+    "tokenomics.info.point3": "آليات مضادة للحيتان",
+    "tokenomics.info.point4": "مكافآت LP تلقائية للحاملين",
+    
+    // Roadmap
+    "roadmap.title": "خارطة الطريق",
+    "roadmap.phase1.title": "المرحلة 1: الإطلاق",
+    "roadmap.phase1.item1": "إطلاق الموقع",
+    "roadmap.phase1.item2": "بناء المجتمع",
+    "roadmap.phase1.item3": "حملة البيع المسبق",
+    "roadmap.phase1.item4": "التواجد على وسائل التواصل الاجتماعي",
+    "roadmap.phase2.title": "المرحلة 2: النمو",
+    "roadmap.phase2.item1": "الإدراج في DEX",
+    "roadmap.phase2.item2": "الحملة التسويقية",
+    "roadmap.phase2.item3": "إعلانات الشراكة",
+    "roadmap.phase2.item4": "إتمام التدقيق",
+    "roadmap.phase3.title": "المرحلة 3: التوسع",
+    "roadmap.phase3.item1": "الإدراج في CEX",
+    "roadmap.phase3.item2": "النسخة التجريبية لمنصة الذكاء الاصطناعي",
+    "roadmap.phase3.item3": "التسويق العالمي",
+    "roadmap.phase3.item4": "حوكمة المجتمع",
+    "roadmap.phase4.title": "المرحلة 4: الابتكار",
+    "roadmap.phase4.item1": "إطلاق منتجات الذكاء الاصطناعي",
+    "roadmap.phase4.item2": "جسر عبر السلاسل",
+    "roadmap.phase4.item3": "إصدار تطبيق الجوال",
+    "roadmap.phase4.item4": "توسيع النظام البيئي",
+    
+    // Footer
+    "footer.rights": "جميع الحقوق محفوظة.",
+    "footer.community": "المجتمع",
+    "footer.resources": "الموارد",
+    "footer.whitepaper": "الورقة البيضاء",
+    "footer.audit": "التدقيق",
+    "footer.docs": "التوثيق"
   }
 };
 
@@ -182,7 +514,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguageState] = useState<Language>(() => {
     const saved = localStorage.getItem("language");
-    return (saved === "en" || saved === "id") ? saved : "en";
+    return (saved === "en" || saved === "id" || saved === "zh" || saved === "ko" || saved === "ru" || saved === "ar") ? saved : "en";
   });
 
   useEffect(() => {

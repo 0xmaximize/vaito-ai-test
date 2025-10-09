@@ -33,6 +33,34 @@ const LanguageSelector = () => {
           <span className="mr-2">🇮🇩</span>
           Bahasa Indonesia
         </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => setLanguage("zh")}
+          className={`cursor-pointer ${language === "zh" ? "bg-primary/20" : ""}`}
+        >
+          <span className="mr-2">🇨🇳</span>
+          中文
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => setLanguage("ko")}
+          className={`cursor-pointer ${language === "ko" ? "bg-primary/20" : ""}`}
+        >
+          <span className="mr-2">🇰🇷</span>
+          한국어
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => setLanguage("ru")}
+          className={`cursor-pointer ${language === "ru" ? "bg-primary/20" : ""}`}
+        >
+          <span className="mr-2">🇷🇺</span>
+          Русский
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => setLanguage("ar")}
+          className={`cursor-pointer ${language === "ar" ? "bg-primary/20" : ""}`}
+        >
+          <span className="mr-2">🇸🇦</span>
+          العربية
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
