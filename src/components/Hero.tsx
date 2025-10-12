@@ -174,6 +174,13 @@ export const Hero = () => {
               </div>
             </div>
 
+            {/* Instructions */}
+            <div className="p-4 rounded-lg bg-primary/10 border border-primary/30">
+              <p className="text-sm text-center text-foreground font-medium">
+                {t("presale.instructions")}
+              </p>
+            </div>
+
             {/* Exchange Rate & Min Buy */}
             <div className="grid grid-cols-2 gap-3">
               <div className="p-3 rounded-lg bg-background/50 border border-primary/20">
