@@ -116,21 +116,21 @@ export const Hero = () => {
 
       {/* Presale Dialog */}
       <Dialog open={showPresale} onOpenChange={setShowPresale}>
-        <DialogContent className="sm:max-w-lg md:max-w-xl max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-xl border-primary/30">
-          <DialogHeader className="space-y-2 pb-2">
-            <DialogTitle className="text-xl sm:text-2xl font-orbitron text-glow">{t("presale.title")}</DialogTitle>
-            <DialogDescription className="text-sm text-muted-foreground">
+        <DialogContent className="sm:max-w-lg md:max-w-xl max-h-[85vh] overflow-y-auto bg-background/95 backdrop-blur-xl border-primary/30 p-4 sm:p-6">
+          <DialogHeader className="space-y-1 pb-1 sm:pb-2">
+            <DialogTitle className="text-lg sm:text-xl md:text-2xl font-orbitron text-glow">{t("presale.title")}</DialogTitle>
+            <DialogDescription className="text-xs sm:text-sm text-muted-foreground">
               {t("presale.description")}
             </DialogDescription>
           </DialogHeader>
           
-          <div className="space-y-4 py-2">
+          <div className="space-y-2.5 sm:space-y-4 py-1 sm:py-2">
             {/* Presale Address */}
-            <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground block">{t("presale.address")}</label>
-              <div className="flex gap-2">
-                <div className="flex-1 px-3 py-2.5 bg-background/50 border border-primary/30 rounded-md overflow-x-auto">
-                  <p className="text-xs sm:text-sm font-mono text-foreground whitespace-nowrap">
+            <div className="space-y-1.5 sm:space-y-2">
+              <label className="text-xs sm:text-sm font-semibold text-foreground block">{t("presale.address")}</label>
+              <div className="flex gap-1.5 sm:gap-2">
+                <div className="flex-1 px-2 py-1.5 sm:px-3 sm:py-2 bg-background/50 border border-primary/30 rounded-md overflow-x-auto">
+                  <p className="text-[10px] sm:text-xs font-mono text-foreground whitespace-nowrap">
                     {presaleAddress}
                   </p>
                 </div>
@@ -138,19 +138,19 @@ export const Hero = () => {
                   size="icon"
                   variant="outline"
                   onClick={copyAddress}
-                  className="shrink-0 border-primary/30 hover:bg-primary/10"
+                  className="shrink-0 h-8 w-8 sm:h-10 sm:w-10 border-primary/30 hover:bg-primary/10"
                 >
-                  {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+                  {copied ? <Check className="h-3 w-3 sm:h-4 sm:w-4" /> : <Copy className="h-3 w-3 sm:h-4 sm:w-4" />}
                 </Button>
               </div>
             </div>
 
             {/* Calculator */}
-            <div className="space-y-3 p-3 sm:p-4 rounded-lg bg-primary/10 border border-primary/30">
-              <label className="text-sm font-semibold text-foreground block">{t("presale.calculator")}</label>
-              <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-3 p-2 sm:p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/30">
+              <label className="text-xs sm:text-sm font-semibold text-foreground block">{t("presale.calculator")}</label>
+              <div className="space-y-2 sm:space-y-3">
                 <div>
-                  <label className="text-xs text-muted-foreground mb-1.5 block">{t("presale.enterAmount")}</label>
+                  <label className="text-[10px] sm:text-xs text-muted-foreground mb-1 block">{t("presale.enterAmount")}</label>
                   <input
                     type="number"
                     placeholder="0.00"
@@ -158,16 +158,16 @@ export const Hero = () => {
                     onChange={(e) => setSolAmount(e.target.value)}
                     min="0"
                     step="0.01"
-                    className="w-full px-3 py-2.5 bg-background/50 border border-primary/30 rounded-md text-foreground text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    className="w-full px-2.5 py-1.5 sm:px-3 sm:py-2 bg-background/50 border border-primary/30 rounded-md text-foreground text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                 </div>
-                <div className="flex items-center justify-center text-muted-foreground py-1">
-                  <span className="text-lg">↓</span>
+                <div className="flex items-center justify-center text-muted-foreground">
+                  <span className="text-base sm:text-lg">↓</span>
                 </div>
                 <div>
-                  <label className="text-xs text-muted-foreground mb-1.5 block">{t("presale.willReceive")}</label>
-                  <div className="w-full px-3 py-2.5 bg-background/80 border border-primary/50 rounded-md">
-                    <p className="text-foreground font-bold text-sm sm:text-base break-words">
+                  <label className="text-[10px] sm:text-xs text-muted-foreground mb-1 block">{t("presale.willReceive")}</label>
+                  <div className="w-full px-2.5 py-1.5 sm:px-3 sm:py-2 bg-background/80 border border-primary/50 rounded-md">
+                    <p className="text-foreground font-bold text-xs sm:text-sm break-words">
                       {calculateVaito()} VAITO
                     </p>
                   </div>
@@ -176,33 +176,33 @@ export const Hero = () => {
             </div>
 
             {/* Instructions */}
-            <div className="p-3 sm:p-4 rounded-lg bg-primary/10 border border-primary/30">
-              <p className="text-xs sm:text-sm text-center text-foreground font-medium leading-relaxed">
+            <div className="p-2 sm:p-3 md:p-4 rounded-lg bg-primary/10 border border-primary/30">
+              <p className="text-[10px] sm:text-xs md:text-sm text-center text-foreground font-medium leading-relaxed">
                 {t("presale.instructions")}
               </p>
             </div>
 
             {/* Exchange Rate & Min Buy */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="p-3 rounded-lg bg-background/50 border border-primary/20">
-                <div className="text-center space-y-1">
-                  <p className="text-xs text-muted-foreground">{t("presale.exchangeRate")}</p>
-                  <p className="text-xs sm:text-sm font-semibold text-foreground break-words">
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
+              <div className="p-2 sm:p-3 rounded-lg bg-background/50 border border-primary/20">
+                <div className="text-center space-y-0.5 sm:space-y-1">
+                  <p className="text-[9px] sm:text-xs text-muted-foreground">{t("presale.exchangeRate")}</p>
+                  <p className="text-[10px] sm:text-xs font-semibold text-foreground break-words leading-tight">
                     1 SOL = 12,682,023 VAITO
                   </p>
                 </div>
               </div>
-              <div className="p-3 rounded-lg bg-background/50 border border-primary/20">
-                <div className="text-center space-y-1">
-                  <p className="text-xs text-muted-foreground">{t("presale.minBuy")}</p>
-                  <p className="text-xs sm:text-sm font-semibold text-foreground">0.2 SOL</p>
+              <div className="p-2 sm:p-3 rounded-lg bg-background/50 border border-primary/20">
+                <div className="text-center space-y-0.5 sm:space-y-1">
+                  <p className="text-[9px] sm:text-xs text-muted-foreground">{t("presale.minBuy")}</p>
+                  <p className="text-[10px] sm:text-xs font-semibold text-foreground">0.2 SOL</p>
                 </div>
               </div>
             </div>
 
             {/* Warning */}
-            <div className="p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
-              <p className="text-xs leading-relaxed text-yellow-200">
+            <div className="p-2 sm:p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30">
+              <p className="text-[9px] sm:text-xs leading-relaxed text-yellow-200">
                 {t("presale.warning")}
               </p>
             </div>
