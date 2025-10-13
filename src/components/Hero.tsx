@@ -101,7 +101,51 @@ export const Hero = () => {
             {t("hero.description")}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
+          {/* Countdown Timer */}
+          <div className="p-3 sm:p-4 rounded-lg bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/40 max-w-md">
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <Clock className="h-4 w-4 text-primary" />
+              <p className="text-xs sm:text-sm font-semibold text-muted-foreground uppercase tracking-wide">
+                {t("presale.endsIn")}
+              </p>
+            </div>
+            <div className="grid grid-cols-4 gap-2 sm:gap-3">
+              <div className="text-center">
+                <div className="bg-background/80 rounded-md p-2 border border-primary/30">
+                  <p className="text-xl sm:text-2xl font-bold text-foreground tabular-nums">
+                    {String(timeLeft.days).padStart(2, '0')}
+                  </p>
+                </div>
+                <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">{t("presale.days")}</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-background/80 rounded-md p-2 border border-primary/30">
+                  <p className="text-xl sm:text-2xl font-bold text-foreground tabular-nums">
+                    {String(timeLeft.hours).padStart(2, '0')}
+                  </p>
+                </div>
+                <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">{t("presale.hours")}</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-background/80 rounded-md p-2 border border-primary/30">
+                  <p className="text-xl sm:text-2xl font-bold text-foreground tabular-nums">
+                    {String(timeLeft.minutes).padStart(2, '0')}
+                  </p>
+                </div>
+                <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">{t("presale.minutes")}</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-background/80 rounded-md p-2 border border-primary/30">
+                  <p className="text-xl sm:text-2xl font-bold text-foreground tabular-nums">
+                    {String(timeLeft.seconds).padStart(2, '0')}
+                  </p>
+                </div>
+                <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">{t("presale.seconds")}</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Button 
               size="lg" 
               onClick={() => setShowPresale(true)}
@@ -155,50 +199,6 @@ export const Hero = () => {
               {t("presale.description")}
             </DialogDescription>
           </DialogHeader>
-          
-          {/* Countdown Timer */}
-          <div className="p-2.5 sm:p-4 rounded-lg bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/40">
-            <div className="flex items-center justify-center gap-1.5 sm:gap-2 mb-2">
-              <Clock className="h-3 w-3 sm:h-4 sm:w-4 text-primary" />
-              <p className="text-[10px] sm:text-xs font-semibold text-muted-foreground uppercase tracking-wide">
-                {t("presale.endsIn")}
-              </p>
-            </div>
-            <div className="grid grid-cols-4 gap-1.5 sm:gap-3">
-              <div className="text-center">
-                <div className="bg-background/80 rounded-md p-1.5 sm:p-2 border border-primary/30">
-                  <p className="text-lg sm:text-2xl md:text-3xl font-bold text-foreground tabular-nums">
-                    {String(timeLeft.days).padStart(2, '0')}
-                  </p>
-                </div>
-                <p className="text-[9px] sm:text-xs text-muted-foreground mt-1">{t("presale.days")}</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-background/80 rounded-md p-1.5 sm:p-2 border border-primary/30">
-                  <p className="text-lg sm:text-2xl md:text-3xl font-bold text-foreground tabular-nums">
-                    {String(timeLeft.hours).padStart(2, '0')}
-                  </p>
-                </div>
-                <p className="text-[9px] sm:text-xs text-muted-foreground mt-1">{t("presale.hours")}</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-background/80 rounded-md p-1.5 sm:p-2 border border-primary/30">
-                  <p className="text-lg sm:text-2xl md:text-3xl font-bold text-foreground tabular-nums">
-                    {String(timeLeft.minutes).padStart(2, '0')}
-                  </p>
-                </div>
-                <p className="text-[9px] sm:text-xs text-muted-foreground mt-1">{t("presale.minutes")}</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-background/80 rounded-md p-1.5 sm:p-2 border border-primary/30">
-                  <p className="text-lg sm:text-2xl md:text-3xl font-bold text-foreground tabular-nums">
-                    {String(timeLeft.seconds).padStart(2, '0')}
-                  </p>
-                </div>
-                <p className="text-[9px] sm:text-xs text-muted-foreground mt-1">{t("presale.seconds")}</p>
-              </div>
-            </div>
-          </div>
           
           <div className="space-y-2.5 sm:space-y-4 py-1 sm:py-2">
             {/* Presale Address */}
