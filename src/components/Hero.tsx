@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
-import { Copy, Check, Clock } from "lucide-react";
+import { Copy, Check, Clock, Sparkles } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-vaito.jpg";
 import vaitoLogo from "@/assets/vaito-logo.jpg";
@@ -142,6 +142,31 @@ export const Hero = () => {
                   </p>
                 </div>
                 <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">{t("presale.seconds")}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Special Price Banner */}
+          <div className="p-3 sm:p-4 rounded-lg bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/40 max-w-md">
+            <div className="flex items-start gap-3">
+              <div className="p-2 bg-yellow-500/20 rounded-lg">
+                <Sparkles className="h-5 w-5 text-yellow-400" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-sm sm:text-base font-bold text-yellow-400 uppercase tracking-wide">
+                    Special Price
+                  </h3>
+                  <span className="px-2 py-0.5 bg-yellow-500/30 rounded-full text-[10px] font-semibold text-yellow-300">
+                    5x BONUS
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-foreground mb-1">
+                  <span className="font-semibold">17 Okt - 20 Okt</span>
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Pembelian minimal 4 SOL akan dapat extra bonus 5x
+                </p>
               </div>
             </div>
           </div>
