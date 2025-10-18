@@ -42,6 +42,12 @@ const translations = {
     "presale.remaining": "Remaining",
     "presale.warning": "⚠️ Always verify the contract address before sending funds. Do not send from exchanges.",
     
+    // Special Price
+    "specialPrice.title": "Special Price",
+    "specialPrice.bonus": "BONUS",
+    "specialPrice.dates": "17 Oct - 20 Oct",
+    "specialPrice.description": "Minimum purchase of 4 SOL will get extra 5x bonus",
+    
     // About
     "about.title": "About VAITO.AI",
     "about.description1": "VAITO.AI is a revolutionary cryptocurrency project that combines cutting-edge artificial intelligence with blockchain technology.",
@@ -130,6 +136,12 @@ const translations = {
     "presale.complete": "Selesai",
     "presale.remaining": "Tersisa",
     "presale.warning": "⚠️ Selalu verifikasi alamat kontrak sebelum mengirim dana. Jangan kirim dari exchange.",
+    
+    // Special Price
+    "specialPrice.title": "Harga Spesial",
+    "specialPrice.bonus": "BONUS",
+    "specialPrice.dates": "17 Okt - 20 Okt",
+    "specialPrice.description": "Pembelian minimal 4 SOL akan dapat extra bonus 5x",
     
     // About
     "about.title": "Tentang VAITO.AI",
@@ -220,6 +232,12 @@ const translations = {
     "presale.remaining": "剩余",
     "presale.warning": "⚠️ 发送资金前请务必验证合约地址。请勿从交易所发送。",
     
+    // Special Price
+    "specialPrice.title": "特价优惠",
+    "specialPrice.bonus": "奖励",
+    "specialPrice.dates": "10月17日 - 10月20日",
+    "specialPrice.description": "最低购买4 SOL将获得额外5倍奖励",
+    
     // About
     "about.title": "关于 VAITO.AI",
     "about.description1": "VAITO.AI 是一个革命性的加密货币项目，将尖端人工智能与区块链技术相结合。",
@@ -308,6 +326,12 @@ const translations = {
     "presale.complete": "완료",
     "presale.remaining": "남은",
     "presale.warning": "⚠️ 자금을 보내기 전에 항상 컨트랙트 주소를 확인하세요. 거래소에서 보내지 마세요.",
+    
+    // Special Price
+    "specialPrice.title": "특별 가격",
+    "specialPrice.bonus": "보너스",
+    "specialPrice.dates": "10월 17일 - 10월 20일",
+    "specialPrice.description": "최소 4 SOL 구매 시 추가 5배 보너스 제공",
     
     // About
     "about.title": "VAITO.AI 소개",
@@ -398,6 +422,12 @@ const translations = {
     "presale.remaining": "Осталось",
     "presale.warning": "⚠️ Всегда проверяйте адрес контракта перед отправкой средств. Не отправляйте с бирж.",
     
+    // Special Price
+    "specialPrice.title": "Специальная цена",
+    "specialPrice.bonus": "БОНУС",
+    "specialPrice.dates": "17 окт - 20 окт",
+    "specialPrice.description": "При покупке минимум 4 SOL получите дополнительный бонус x5",
+    
     // About
     "about.title": "О VAITO.AI",
     "about.description1": "VAITO.AI - это революционный криптовалютный проект, который сочетает передовой искусственный интеллект с технологией блокчейн.",
@@ -486,6 +516,12 @@ const translations = {
     "presale.complete": "مكتمل",
     "presale.remaining": "المتبقي",
     "presale.warning": "⚠️ تحقق دائمًا من عنوان العقد قبل إرسال الأموال. لا ترسل من البورصات.",
+    
+    // Special Price
+    "specialPrice.title": "سعر خاص",
+    "specialPrice.bonus": "مكافأة",
+    "specialPrice.dates": "17 أكتوبر - 20 أكتوبر",
+    "specialPrice.description": "الحد الأدنى للشراء 4 SOL سيحصل على مكافأة إضافية 5x",
     
     // About
     "about.title": "حول VAITO.AI",

@@ -155,17 +155,17 @@ export const Hero = () => {
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <h3 className="text-sm sm:text-base font-bold text-yellow-400 uppercase tracking-wide">
-                    Special Price
+                    {t("specialPrice.title")}
                   </h3>
                   <span className="px-2 py-0.5 bg-yellow-500/30 rounded-full text-[10px] font-semibold text-yellow-300">
-                    5x BONUS
+                    5x {t("specialPrice.bonus")}
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-foreground mb-1">
-                  <span className="font-semibold">17 Okt - 20 Okt</span>
+                  <span className="font-semibold">{t("specialPrice.dates")}</span>
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Pembelian minimal 4 SOL akan dapat extra bonus 5x
+                  {t("specialPrice.description")}
                 </p>
               </div>
             </div>
