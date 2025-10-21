@@ -21,6 +21,7 @@ const translations = {
     "hero.description": "Be part of the crypto movement, stay informed and connected with everything.",
     "hero.buyNow": "BUY NOW",
     "hero.learnMore": "LEARN MORE",
+    "hero.joinAirdrop": "Join Airdrop Phase 2",
     
     // Presale Dialog
     "presale.title": "VAITO.AI Presale",
@@ -41,6 +42,16 @@ const translations = {
     "presale.complete": "Complete",
     "presale.remaining": "Remaining",
     "presale.warning": "⚠️ Always verify the contract address before sending funds. Do not send from exchanges.",
+    
+    // Airdrop
+    "airdrop.title": "Join VAITO Airdrop Phase 2",
+    "airdrop.description": "Submit your SOL address to participate in the airdrop",
+    "airdrop.addressLabel": "Your SOL Address",
+    "airdrop.addressPlaceholder": "Enter your Solana wallet address",
+    "airdrop.submit": "Submit",
+    "airdrop.success": "Successfully registered for airdrop!",
+    "airdrop.successDesc": "You will receive your VAITO tokens when the airdrop is distributed.",
+    "airdrop.invalidAddress": "Please enter a valid Solana address",
     
     // Special Price
     "specialPrice.title": "Special Price",
@@ -116,6 +127,7 @@ const translations = {
     "hero.description": "Jadilah bagian dari gerakan kripto, tetap terinformasi dan terhubung dengan segalanya.",
     "hero.buyNow": "BELI SEKARANG",
     "hero.learnMore": "PELAJARI LEBIH LANJUT",
+    "hero.joinAirdrop": "Gabung Airdrop Fase 2",
     
     // Presale Dialog
     "presale.title": "Presale VAITO.AI",
@@ -136,6 +148,16 @@ const translations = {
     "presale.complete": "Selesai",
     "presale.remaining": "Tersisa",
     "presale.warning": "⚠️ Selalu verifikasi alamat kontrak sebelum mengirim dana. Jangan kirim dari exchange.",
+    
+    // Airdrop
+    "airdrop.title": "Gabung Airdrop VAITO Fase 2",
+    "airdrop.description": "Kirimkan alamat SOL Anda untuk berpartisipasi dalam airdrop",
+    "airdrop.addressLabel": "Alamat SOL Anda",
+    "airdrop.addressPlaceholder": "Masukkan alamat wallet Solana Anda",
+    "airdrop.submit": "Kirim",
+    "airdrop.success": "Berhasil terdaftar untuk airdrop!",
+    "airdrop.successDesc": "Anda akan menerima token VAITO ketika airdrop didistribusikan.",
+    "airdrop.invalidAddress": "Silakan masukkan alamat Solana yang valid",
     
     // Special Price
     "specialPrice.title": "Harga Spesial",
@@ -211,6 +233,7 @@ const translations = {
     "hero.description": "成为加密运动的一部分，随时了解并与一切保持联系。",
     "hero.buyNow": "立即购买",
     "hero.learnMore": "了解更多",
+    "hero.joinAirdrop": "加入第二阶段空投",
     
     // Presale Dialog
     "presale.title": "VAITO.AI 预售",
@@ -231,6 +254,16 @@ const translations = {
     "presale.complete": "完成",
     "presale.remaining": "剩余",
     "presale.warning": "⚠️ 发送资金前请务必验证合约地址。请勿从交易所发送。",
+    
+    // Airdrop
+    "airdrop.title": "加入VAITO第二阶段空投",
+    "airdrop.description": "提交您的SOL地址以参与空投",
+    "airdrop.addressLabel": "您的SOL地址",
+    "airdrop.addressPlaceholder": "输入您的Solana钱包地址",
+    "airdrop.submit": "提交",
+    "airdrop.success": "成功注册空投！",
+    "airdrop.successDesc": "空投分发时您将收到VAITO代币。",
+    "airdrop.invalidAddress": "请输入有效的Solana地址",
     
     // Special Price
     "specialPrice.title": "特价优惠",
@@ -306,6 +339,7 @@ const translations = {
     "hero.description": "암호화폐 운동의 일원이 되어 모든 것에 대한 정보를 받고 연결을 유지하세요.",
     "hero.buyNow": "지금 구매",
     "hero.learnMore": "더 알아보기",
+    "hero.joinAirdrop": "2단계 에어드랍 참여",
     
     // Presale Dialog
     "presale.title": "VAITO.AI 프리세일",
@@ -326,6 +360,16 @@ const translations = {
     "presale.complete": "완료",
     "presale.remaining": "남은",
     "presale.warning": "⚠️ 자금을 보내기 전에 항상 컨트랙트 주소를 확인하세요. 거래소에서 보내지 마세요.",
+    
+    // Airdrop
+    "airdrop.title": "VAITO 2단계 에어드랍 참여",
+    "airdrop.description": "에어드랍에 참여하려면 SOL 주소를 제출하세요",
+    "airdrop.addressLabel": "귀하의 SOL 주소",
+    "airdrop.addressPlaceholder": "솔라나 지갑 주소를 입력하세요",
+    "airdrop.submit": "제출",
+    "airdrop.success": "에어드랍 등록 완료!",
+    "airdrop.successDesc": "에어드랍 배포 시 VAITO 토큰을 받게 됩니다.",
+    "airdrop.invalidAddress": "유효한 솔라나 주소를 입력하세요",
     
     // Special Price
     "specialPrice.title": "특별 가격",
@@ -401,6 +445,7 @@ const translations = {
     "hero.description": "Станьте частью криптовалютного движения, будьте в курсе и на связи со всем.",
     "hero.buyNow": "КУПИТЬ СЕЙЧАС",
     "hero.learnMore": "УЗНАТЬ БОЛЬШЕ",
+    "hero.joinAirdrop": "Присоединиться к раздаче 2 этапа",
     
     // Presale Dialog
     "presale.title": "Предпродажа VAITO.AI",
@@ -421,6 +466,16 @@ const translations = {
     "presale.complete": "Завершено",
     "presale.remaining": "Осталось",
     "presale.warning": "⚠️ Всегда проверяйте адрес контракта перед отправкой средств. Не отправляйте с бирж.",
+    
+    // Airdrop
+    "airdrop.title": "Присоединиться к раздаче VAITO 2 этапа",
+    "airdrop.description": "Отправьте свой адрес SOL для участия в раздаче",
+    "airdrop.addressLabel": "Ваш адрес SOL",
+    "airdrop.addressPlaceholder": "Введите адрес вашего кошелька Solana",
+    "airdrop.submit": "Отправить",
+    "airdrop.success": "Успешная регистрация на раздачу!",
+    "airdrop.successDesc": "Вы получите токены VAITO при распределении раздачи.",
+    "airdrop.invalidAddress": "Пожалуйста, введите действительный адрес Solana",
     
     // Special Price
     "specialPrice.title": "Специальная цена",
@@ -496,6 +551,7 @@ const translations = {
     "hero.description": "كن جزءًا من حركة العملات المشفرة، وابق على اطلاع ومتصلاً بكل شيء.",
     "hero.buyNow": "اشتر الآن",
     "hero.learnMore": "اعرف المزيد",
+    "hero.joinAirdrop": "انضم إلى المرحلة الثانية من الإسقاط الجوي",
     
     // Presale Dialog
     "presale.title": "VAITO.AI البيع المسبق",
@@ -516,6 +572,16 @@ const translations = {
     "presale.complete": "مكتمل",
     "presale.remaining": "المتبقي",
     "presale.warning": "⚠️ تحقق دائمًا من عنوان العقد قبل إرسال الأموال. لا ترسل من البورصات.",
+    
+    // Airdrop
+    "airdrop.title": "انضم إلى الإسقاط الجوي لـ VAITO المرحلة الثانية",
+    "airdrop.description": "قدم عنوان SOL الخاص بك للمشاركة في الإسقاط الجوي",
+    "airdrop.addressLabel": "عنوان SOL الخاص بك",
+    "airdrop.addressPlaceholder": "أدخل عنوان محفظة Solana الخاصة بك",
+    "airdrop.submit": "إرسال",
+    "airdrop.success": "تم التسجيل بنجاح في الإسقاط الجوي!",
+    "airdrop.successDesc": "ستتلقى رموز VAITO عند توزيع الإسقاط الجوي.",
+    "airdrop.invalidAddress": "يرجى إدخال عنوان Solana صالح",
     
     // Special Price
     "specialPrice.title": "سعر خاص",
