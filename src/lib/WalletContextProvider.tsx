@@ -25,7 +25,7 @@ const WalletContextProvider: FC<WalletContextProviderProps> = ({ children }) => 
   const wallets = [new PhantomWalletAdapter(), new SolflareWalletAdapter()];
 
   return (
-    <ConnectionProvider endpoint={endpoint}>
+    <ConnectionProvider endpoint={endpoint} autoConnect>
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>{children}</WalletModalProvider>
       </WalletProvider>
