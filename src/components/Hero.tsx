@@ -287,11 +287,10 @@ export const Hero = () => {
            
           <div className="flex justify-center pt-4 mt-6">
               <h4 classnName='font-bold text-xl py-6'>Or connect with wallet</h4>
-            <WalletMultiButton style={{background:'#6d1b7d', borderRadius:'4px'}} />>
+            <WalletMultiButton style={{background:'#6d1b7d', borderRadius:'4px'}} />
               Connect wallet
           </div>
         </DialogContent>
-          
       </Dialog>
 
     </section>
