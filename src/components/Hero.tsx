@@ -288,6 +288,11 @@ export const Hero = () => {
               <WalletMultiButton className="!bg-primary !text-primary-foreground !font-semibold hover:!bg-primary/90 transition-all" />
             </div>
         </DialogContent>
+        <DialogContent>
+          <div className="flex justify-center pt-4">
+              <h4 classnName='font-bold text-xl py-6'>Or connect a wallet</h4>
+            <WalletMultiButton className="!bg-primary !text-primary-foreground !font-semibold hover:!bg-primary/90 transition-all" />
+          </div>
       </Dialog>
 
     </section>
